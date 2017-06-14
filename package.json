@@ -1,0 +1,36 @@
+{
+  "name": "mongoscraper",
+  "version": "1.0.0",
+  "description": "scraping new york times website to use on my site as list of articles that I can save, add a note to and delete",
+  "main": "main.handlebars",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwyanalford/mongoSraper.git"
+  },
+  "keywords": [
+    "mongo",
+    "handlebars",
+    "express",
+    "cheerio",
+    "mongoose",
+    "request"
+  ],
+  "author": "Dwyan Alford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwyanalford/mongoSraper/issues"
+  },
+  "homepage": "https://github.com/dwyanalford/mongoSraper#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.10.5",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0"
+  }
+}

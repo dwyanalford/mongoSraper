@@ -1,0 +1,40 @@
+
+	{{!-- Scraper Modal --}}
+<div id="scrapesModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Added {{Article.count}} new articles</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div class="container">
+	<div>
+			<div class="row">
+			{{#each Article}}
+				<div class="col-md-8">
+					<h3>{{this.title}}</h3>
+					<p>{{this.text}}</p>  
+				</div>
+				<div class="col-md-2">
+					<form action="/{{this.id}}" method="POST">
+	                    <button type="submit" class="btn btn-primary">Save Article</button>
+					</form>
+				</div>
+				<div class="col-md-2"></div>
+			{{/each}}
+		    </div>
+	</div>
+</div>
+
+
